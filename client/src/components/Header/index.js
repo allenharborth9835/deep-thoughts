@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -6,6 +7,10 @@ const Header = () => {
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <h1>Deep Thoughts</h1>
       </div>
+      <nav className="text-center">
+        <Link to ="/login">Login</Link>
+        <Link to="/signup">Signup</Link>
+      </nav>
     </header>
   );
 };
